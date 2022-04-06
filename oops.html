@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oops</title>
+</head>
+<body>
+
+
+
+
+<script>
+
+
+class person{
+
+    constructor(){
+        this.name="abc";
+    }
+    printname(){
+        console.log(this.name);
+    
+
+    }
+}
+const persons = new person();
+persons.printname()
+</script>
+
+
+    <script>
+
+class cars{
+    constructor(){
+        this.brand ="audi";
+        this.name ="A9";
+    }
+    print(){
+        console.log(this.brand);
+        console.log(this.name);
+    }
+}
+class cars1 extends cars{
+    constructor(){
+        super();
+    this.brand1="honda";
+    this.name1="wrv";
+    this.range="13l";
+    }
+    printcars1(){
+        console.log(this.brand1);
+        console.log(this.name1);
+        console.log(this.range);
+    }
+}
+const per=new cars1();
+per.printcars1();
+per.print();
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class objects</title>
+</head>
+<body>
+    <script>
+
+class student {
+    constructor(){
+this.roll= prompt();
+this.name= prompt();
+
+    }
+    print(){
+
+console.log(this.roll);
+console.log(this.name);
+
+    }
+}
+const per = new student();
+per.print();
+
+
+
+        class details {
+            constructor(id,name){
+                this.id=id;
+                this.name=name;
+            }
+            print(){
+              console.log(this.id);
+              console.log(this.name);
+            }
+        }
+        var n1 = new details(10.1,"satya");
+        var n2 =new details(10.1,"rohini");
+        n1.print();
+        n2.print();
+    </script>
+</body>
+</html>
